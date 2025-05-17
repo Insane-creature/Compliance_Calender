@@ -32,4 +32,12 @@ public class Recipient {
 
     @ManyToMany(mappedBy = "recipients")
     private Set<Deadline> deadlines;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
